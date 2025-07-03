@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Rwanda - Your Guide to Higher Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Campus Rwanda</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#education-system" class="nav-link">Education System</a></li>
+                    <li><a href="#universities" class="nav-link">Universities</a></li>
+                    <li><a href="#scholarships" class="nav-link">Scholarships</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Campus Rwanda</h1>
+            <p class="hero-subtitle">Your Guide to Higher Education in the Land of a Thousand Hills</p>
+            <button class="cta-button" onclick="document.getElementById('education-system').scrollIntoView({behavior: 'smooth'})">
+                Get Started
+            </button>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-university"></i>
+        </div>
+    </section>
+
+    <!-- Education System Section -->
+    <section id="education-system" class="section">
+        <div class="container">
+            <h2 class="section-title">Rwanda's Education System</h2>
+            <div class="education-content">
+                <p class="education-text">
+                    Rwanda's education system is structured into four main levels: Pre-Primary Education (nursery and kindergarten), 
+                    Primary Education (6 years), Secondary Education (6 years split into lower and upper secondary), and Higher Education 
+                    (universities and technical institutes). The country has made remarkable progress in education since 1994, with English 
+                    becoming the primary language of instruction alongside Kinyarwanda and French. Rwanda is committed to quality education 
+                    for all, with significant investments in infrastructure, teacher training, and technology integration.
+                </p>
+                <div class="education-levels">
+                    <div class="level-card">
+                        <i class="fas fa-baby"></i>
+                        <h4>Pre-Primary</h4>
+                        <p>Nursery & Kindergarten</p>
+                    </div>
+                    <div class="level-card">
+                        <i class="fas fa-child"></i>
+                        <h4>Primary</h4>
+                        <p>6 Years (P1-P6)</p>
+                    </div>
+                    <div class="level-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Secondary</h4>
+                        <p>6 Years (S1-S6)</p>
+                    </div>
+                    <div class="level-card">
+                        <i class="fas fa-university"></i>
+                        <h4>Higher Education</h4>
+                        <p>Universities & Institutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section id="universities" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Top Universities in Rwanda</h2>
+            <div class="universities-grid" id="universities-grid">
+                <!-- Universities will be populated by JavaScript from store.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarships Section -->
+    <section id="scholarships" class="section">
+        <div class="container">
+            <h2 class="section-title">Available Scholarships</h2>
+            <div class="scholarships-grid">
+                <div class="scholarship-card">
+                    <i class="fas fa-award"></i>
+                    <h4>Government Scholarships</h4>
+                    <p>Merit-based scholarships for outstanding students in various fields including STEM, agriculture, and social sciences.</p>
+                </div>
+                <div class="scholarship-card">
+                    <i class="fas fa-globe"></i>
+                    <h4>International Scholarships</h4>
+                    <p>Partnerships with international organizations offering study abroad opportunities and exchange programs.</p>
+                </div>
+                <div class="scholarship-card">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Private Sector Scholarships</h4>
+                    <p>Corporate sponsorships and private foundation scholarships for students in business, technology, and innovation.</p>
+                </div>
+                <div class="scholarship-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Need-Based Aid</h4>
+                    <p>Financial assistance programs for students from disadvantaged backgrounds to ensure equal access to education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the admission requirements for Rwandan universities?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Admission requirements typically include completion of secondary education (A-levels), good grades in relevant subjects, and meeting specific program requirements. Some programs may require entrance exams or portfolios.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What languages are used for instruction?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most higher education institutions use English as the primary language of instruction, though some programs may also use Kinyarwanda or French depending on the field of study.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How much does university education cost in Rwanda?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tuition fees vary by institution and program. Public universities generally have lower fees than private ones. Many students benefit from government scholarships and loan programs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are there opportunities for international students?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Rwanda welcomes international students. Many universities have dedicated international student services and offer various programs taught in English.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What support services are available for students?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Universities provide various support services including academic counseling, career guidance, student accommodation, health services, and extracurricular activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Campus Rwanda</h2>
+            <div class="about-content">
+                <p>
+                    Campus Rwanda is your comprehensive guide to higher education in Rwanda. We provide up-to-date information about 
+                    universities, scholarships, admission processes, and educational opportunities across the country. Our mission is to 
+                    make higher education accessible and understandable for all prospective students.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Universities & Institutes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Study Programs</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Scholarship Opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Campus Rwanda</h4>
+                    <p>Your trusted guide to higher education in Rwanda.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#universities">Universities</a></li>
+                        <li><a href="#scholarships">Scholarships</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@campusrwanda.com</p>
+                    <p><i class="fas fa-phone"></i> +250 788 000 000</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Campus Rwanda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
